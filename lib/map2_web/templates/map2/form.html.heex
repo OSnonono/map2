@@ -1,0 +1,24 @@
+<%= if @message do %>
+    <p><%= @message %></p>
+<% end %>
+
+<div>
+    <% # Phoenix.HTML.form_for/4 %>
+    <%= form_for @location, Routes.map2_path(@conn, :create), fn f -> %>
+        <%= label f, :lat, "緯度" %>
+        <%= number_input f, :lat, step: "any" %>
+        <%= error_tag f, :lat %>
+
+        <%= label f, :long, "経度" %>
+        <%= number_input f, :long, step: "any" %>
+        <%= error_tag f, :long %>
+
+        <%= label f, :name, "場所名" %>
+        <%= text_input f, :name %>
+        <%= error_tag f, :name %>
+
+        <div>
+            <button type="submit">登録</button>
+        </div>
+    <% end %>
+</div>

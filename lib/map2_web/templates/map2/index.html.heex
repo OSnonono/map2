@@ -1,0 +1,22 @@
+<h1>トップページ(仮)です</h1>
+
+<div>
+    <%= button "登録する", to: "/new", method: :get %>
+</div>
+
+<table>
+    <tr>
+        <th>緯度</th>
+        <th>経度</th>
+        <th>場所名</th>
+        <th></th>
+    </tr>
+    <%= for location <- @locations do %>
+    <tr>
+        <td><%= location.lat %></td>
+        <td><%= location.long %></td>
+        <td><%= location.name %></td>
+        <td>編集</td>
+    </tr>
+    <% end %>
+</table>
