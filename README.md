@@ -2,6 +2,8 @@
 場所の登録フォーム、DBへのinsert、トップページ(/index)の表示
 まで終わっています。
 
+priv/repo/seeds.exs で初期データのinsertができます。
+
 # Map2
 
 To start your Phoenix server:
