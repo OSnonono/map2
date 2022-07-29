@@ -1,3 +1,7 @@
+# 進捗
+場所の登録フォーム、DBへのinsert、トップページ(/index)の表示
+まで終わっています。
+
 # Map2
 
 To start your Phoenix server:
